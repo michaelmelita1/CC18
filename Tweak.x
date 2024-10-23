@@ -13,7 +13,7 @@ CGFloat calculatedRadius(CGRect visibleRect, CGFloat radius) {
     CGFloat width = visibleRect.size.width;
     CGFloat height = visibleRect.size.height;
 
-	if (CGSizeEqualToSize(visibleRect.size, [UIScreen mainScreen].bounds.size) || width <= 60) {
+	if (CGSizeEqualToSize(visibleRect.size, [UIScreen mainScreen].bounds.size) || width <= 60 || height <= 60) {
         return radius;
     }
 
